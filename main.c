@@ -105,20 +105,20 @@ void the_bezout_identity(int numH, int numL)
 
 int main(int argc, char *argv[])
 {   
-    /*for(int i = 0; i < REPS; ++ i){
-        if(is_prime_num(i) == 1){
-            printf("%d\n", i);
-        }
-    }*/
+    int a, b;
 
-    int a = 358;
-    int b = 217;
-
-    int q = find_optimal_q(a,b);
-    fprintf(stdout,"%d\n",q);
-
-    int gcd = find_gcd(a, b);
-    fprintf(stdout,"gcd(%d,%d): %d\n", a, b, gcd);
+    if(scanf("%d%d", &a, &b) != 2){
+        fprintf(stderr,"Error: Spatne zadane hodnoty!\n");
+        return 100;
+    }
+    if(a < 0 || b < 0){
+        fprintf(stderr,"Error: Cisla nesmeji byti zaporna!\n");
+        return 101;
+    }
+    if(a < b){
+        fprintf(stderr,"Error: Prvni hodnota musi byt mensi nez druha!\n");
+        return 102;
+    }
 
     the_bezout_identity(a, b);
 
@@ -126,6 +126,11 @@ int main(int argc, char *argv[])
 }
 
 /* =============
+
+ToDo:
+- doselchtit code!!!
+
+============= */
 
 ToDo:
 - je prvocislo
