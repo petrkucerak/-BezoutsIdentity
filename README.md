@@ -11,3 +11,6 @@ Algorimtus žere 2 kladná čísla. První je třeba napsat vždy větší. Poku
   <li>101 - Error: Cisla nesmeji byti zaporna!</li>
   <li>102 - Error: Prvni hodnota musi byt mensi nez druha!</li>
  </ul>
+
+## Ukazka vystupu
+![ukazka vystupu](https://github.com/petrkucerak/BezoutsIdentity/blob/main/image.png)
